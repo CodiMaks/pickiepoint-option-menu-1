@@ -32,6 +32,8 @@ cookie_manager = stx.CookieManager()
 # cookie_manager.set(cookie="user_id", val="another_cookie_try", expires_at=expiration_date)
 # cookie_manager.delete(cookie="user_id")
 
+all_cookies = cookie_manager.get_all()
+
 conn = sqlite3.connect('text_areas.db')
 cursor = conn.cursor()
 
