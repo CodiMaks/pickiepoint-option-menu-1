@@ -198,6 +198,8 @@ if 'session_id' not in st.session_state:
         st.header("Else cookie")
         st.session_state.current_page = "Login"
 
+    st.rerun()
+
 # ---------------------------------------------------------------------------------------------------------------------------
 
 
