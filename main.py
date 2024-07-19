@@ -33,6 +33,7 @@ cookie_manager = stx.CookieManager()
 # cookie_manager.delete(cookie="user_id")
 
 all_cookies = cookie_manager.get_all()
+time.sleep(2)
 
 conn = sqlite3.connect('text_areas.db')
 cursor = conn.cursor()
